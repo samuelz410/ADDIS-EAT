@@ -4,7 +4,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Addis Eats",
-  description: "Ethiopian food ordering app",
+  description: "Authentic Ethiopian food ordering application",
 };
 
 export default function RootLayout({
@@ -14,12 +14,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="p-6 max-w-4xl mx-auto font-sans">
-        <nav className="flex gap-4 pb-4 mb-6 border-b border-gray-200">
-          <Link href="/" className="hover:underline">Home</Link>
-          <Link href="/menu" className="hover:underline">Menu</Link>
-          <Link href="/cart" className="hover:underline">Cart</Link>
-          <Link href="/checkout" className="hover:underline">Checkout</Link>
+      <body className="max-w-4xl mx-auto p-6 font-sans">
+        <nav className="flex gap-6 pb-4 mb-6 border-b border-gray-200">
+          <Link href="/" className="font-bold hover:text-amber-600">
+            Home
+          </Link>
+          <Link href="/menu" className="font-bold hover:text-amber-600">
+            Menu
+          </Link>
+          <Link href="/cart" className="font-bold hover:text-amber-600">
+            Cart
+          </Link>
+          <Link href="/checkout" className="font-bold hover:text-amber-600">
+            Checkout
+          </Link>
         </nav>
         {children}
       </body>
